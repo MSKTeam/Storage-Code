@@ -1,0 +1,65 @@
+CODE BÀI ĐĂNG DÀNH CHO THEME MSKMANGA
+-------------------------------------
+
+>>> Code sử dụng cho bài đăng chứa tất cả chương truyện:
++ Dành cho truyện tranh ( ảnh ):--------------------------------------------
+
+<!-- Ảnh đại diện -->
+
+<!--Nội dung và tên khác bộ truyện-->
+<div id="ten-khac">
+text
+</div>
+<div id="noi-dung"><p>
+text
+</p></div>
+<!-- thông tin thêm -->
+<div id="extra-info">
+  <div class="y6x11p">Tác giả <span class="dt">Đang cập nhật</span></div>
+  <div class="y6x11p">Nhóm dịch <span class="dt">MSKTeam</span></div>
+</div>
+<!--Chapter list-->
+<div id="clwd" class="bixbox bxcl epcheck">
+  <script>
+    clwd.run('Label truyện');
+  </script>
+</div>
+
++ Dành cho truyện chữ:-------------------------------------------------------
+
+<!-- Ảnh đại diện -->
+
+<!--Noi dung + ten khac-->
+<div id="ten-khac">
+text
+</div>
+<div id="noi-dung"><p>
+text
+</p></div>
+
+<!-- thông tin thêm -->
+<div id="extra-info">
+  <div class="y6x11p">Tác giả <span class="dt">Đang cập nhật</span></div>
+  <div class="y6x11p">Nhóm dịch <span class="dt">MSKTeam</span></div>
+</div>
+
+<!-- Nguồn cấp dữ liệu cho Volume tương ứng-->
+<script>
+loadFeed('/feeds/posts/summary/-/Label Volume?start-index=2&alt=json-in-script&max-results=150', 'volume-5');
+loadFeed('/feeds/posts/summary/-/Label Volume?start-index=2&alt=json-in-script&max-results=150', 'volume-4');
+</script>
+
+<!-- Volume N -->
+<div class="detail-ln"><div class="title-ln flex aic"><b>Volume N - text - text</b> 
+<button class="anhien mla toggle-button" data-target=" #N " type="button">Hiện chương</button></div>
+<div id="N" class="DPN-Volume"><div class="content-ln"><div class="CCIMG" id="VolumeIMG">
+<!-- Ảnh -->
+
+<!-- END IMG -->
+</div>
+<div class="volume-option">
+<div id="volume-N"></div>
+</div></div></div></div>
+<!-- END Volume N -->
+
+
