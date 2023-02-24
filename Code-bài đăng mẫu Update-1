@@ -2,8 +2,9 @@ CODE BÀI ĐĂNG DÀNH CHO THEME MSKMANGA
 -------------------------------------
 
 >>> Code sử dụng cho bài đăng chứa tất cả chương truyện:
-+ Dành cho truyện tranh ( ảnh ):--------------------------------------------
 
++ Dành cho truyện tranh ( ảnh ):
+----------------------------------CODE--------------------------------------
 <!-- Ảnh đại diện -->
 
 <!--Nội dung và tên khác bộ truyện-->
@@ -25,8 +26,10 @@ text
   </script>
 </div>
 
-+ Dành cho truyện chữ:-------------------------------------------------------
+----------------------------------------------------------------------------
 
++ Dành cho truyện chữ:
+----------------------------------CODE--------------------------------------
 <!-- Ảnh đại diện -->
 
 <!--Noi dung + ten khac-->
@@ -62,4 +65,5 @@ loadFeed('/feeds/posts/summary/-/Label Volume?start-index=2&alt=json-in-script&m
 </div></div></div></div>
 <!-- END Volume N -->
 
+----------------------------------------------------------------------------
 
