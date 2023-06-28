@@ -12,8 +12,10 @@ if (imgTags.length > 0) {
       imgTag.setAttribute("src", finalSrc);
       imgTag.setAttribute("data-src", finalSrc);
       imgTag.removeAttribute("src");
+      imgTag.removeAttribute("title");
       imgTag.classList.add("lazyload");
-      imgTag.setAttribute("data-src", imgTag.getAttribute("data-src").replace("s1600", "s1400-rw"));
+      imgTag.setAttribute("data-src", imgTag.getAttribute("data-src").replace("s1600", "s1000-rw"));
+      imgTag.setAttribute("title", "Image Chapter");
      }
    });
   }
