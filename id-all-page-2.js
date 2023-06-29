@@ -10,12 +10,7 @@ window.addEventListener('load',function(){
   var link2 = document.createElement('link');
   link2.href = '/feeds/posts/default/-/Series?orderby=published&amp;amp;alt=json-in-script&amp;callback=postarea4&amp;max-results=5';
   link2.rel = 'prefetch';
-  var link3 = document.createElement('link');
-  link3.href = 'https://cdn.vuukle.com/platform.js';
-  link3.rel = 'preload';
-  link3.as = 'script';
   var head = document.getElementsByTagName('head')[0];
   head.appendChild(link1);
   head.appendChild(link2);
-  head.appendChild(link3);
 });
