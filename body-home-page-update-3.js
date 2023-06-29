@@ -1,5 +1,4 @@
 window.addEventListener('load',function(){
-$(document).ready(function(){$("img").attr({"data-src":function(){return $(this).attr("src")},class:"lazyload",loading:"lazy"}).removeAttr("src")}),$("img[src*='s1600']").attr("src",function(r,t){return t.replace("s1600","s1600-rw")}),$("img[src*='w144']").attr("src",function(r,t){return t.replace("w144","w144-rw")}),$("img[src*='w72']").attr("src",function(r,t){return t.replace("w72","w72-rw")}),$("[style*='s500']").each(function(){var r=$(this).attr("style");r=r.replace("s500","s500-rw"),$(this).attr("style",r)});
 let itemsPerPage=35;let currentPage=parseInt(getQueryVariable("page"))||1;let totalPages=Math.ceil($('.PTPost').length/itemsPerPage);function getQueryVariable(variable){let query=window.location.search.substring(1);let vars=query.split("&");for(let i=0;i<vars.length;i++){let pair=vars[i].split("=");if(pair[0]===variable){return pair[1]}}
 return!1}
 function showPage(page){$('.PTPost').hide();$('.PTPost').slice((page-1)*itemsPerPage,page*itemsPerPage).show();currentPage=page;updateButtons();updatePageNumbers();window.history.pushState({},"","?page="+page)}
