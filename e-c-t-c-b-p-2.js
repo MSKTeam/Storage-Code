@@ -15,7 +15,8 @@ if (imgTags.length > 0) {
       imgTag.removeAttribute("title");
       imgTag.classList.add("lazyload");
       imgTag.setAttribute("data-src", imgTag.getAttribute("data-src").replace("s1600", "s1600-rw"));
-      imgTag.setAttribute("title", "Image Chapter");
+      imgTag.setAttribute("fetchpriority", "low");
+      imgTag.setAttribute("title", "MSKTeam");
      }
    });
   }
