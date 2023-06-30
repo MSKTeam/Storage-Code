@@ -21,5 +21,5 @@ const interval = setInterval(() => {
   } else {
     clearInterval(interval);
   }
-}, 500);
+}, 300);
 });
