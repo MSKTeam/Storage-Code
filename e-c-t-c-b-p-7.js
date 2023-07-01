@@ -11,6 +11,7 @@ const interval = setInterval(() => {
       src = src.replace('s1600', 's1600-rw');
       imgTag.setAttribute("fetchpriority", "high");
       imgTag.setAttribute("title", "MSKTeam");
+      imgTag.removeAttribute('loading');
       imgTag.setAttribute('src', src);
     }
     const randomDomain = domains[Math.floor(Math.random() * domains.length)];
