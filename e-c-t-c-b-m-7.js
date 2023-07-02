@@ -7,11 +7,14 @@ const interval = setInterval(() => {
   if (counter < imgTags.length) {
     const imgTag = imgTags[counter];
     let src = imgTag.getAttribute('src');
+    imgTag.removeAttribute('loading');
+    imgTag.removeAttribute('title');
+    imgTag.removeAttribute('alt');
+    imgTag.setAttribute("loading", "eager");
+    imgTag.setAttribute("title", "MSKTeam");
+    imgTag.setAttribute("alt", "MSKTeam");
     if (src.includes('s1600')) {
-      src = src.replace('s1600', 's1300-rw');
-      imgTag.setAttribute("fetchpriority", "high");
-      imgTag.setAttribute("title", "MSKTeam");
-      imgTag.removeAttribute('loading');
+      src = src.replace('s1600', 's1200-rw');
       imgTag.setAttribute('src', src);
     }
     const randomDomain = domains[Math.floor(Math.random() * domains.length)];
