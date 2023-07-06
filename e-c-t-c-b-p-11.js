@@ -13,10 +13,6 @@ const interval = setInterval(() => {
     imgTag.setAttribute("loading", "eager");
     imgTag.setAttribute("title", "MSKTeam");
     imgTag.setAttribute("alt", "MSKTeam");
-    if (src.includes('s1600')) {
-      src = src.replace('s1600', 's1600-rw');
-      imgTag.setAttribute('src', src);
-    }
     const randomDomain = domains[Math.floor(Math.random() * domains.length)];
     src = src.replace('https://', `https://${randomDomain}/`);
     imgTag.setAttribute('src', src);
